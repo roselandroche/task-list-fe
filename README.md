@@ -7,7 +7,9 @@ This will be the front end repository for a task list/to do list application. Us
 Planning stage
 
 ## Tech Stack/Framework
-TBD
+- React/JavaScript
+- Redux
+- Styling library of some kind
 
 ## Bugs
 None yet
