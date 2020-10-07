@@ -1,14 +1,13 @@
 import React from 'react';
 import '../css/App.css';
 
+import Header from './Header'
+
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Task List</h1>
-        <p>
-          Create, update, and delete tasks.
-        </p>
+        <Header />
       </header>
     </div>
   );
