@@ -4,12 +4,10 @@
 This will be the front end repository for a task list/to do list application. User will be able to add, update, and delete tasks.
 
 ## Status
-Planning stage
+Mid-build
 
 ## Tech Stack/Framework
 - React/JavaScript
-- Redux
-- Styling library of some kind
 
 ## Bugs
 None yet

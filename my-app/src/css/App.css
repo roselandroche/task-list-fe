@@ -1,8 +1,12 @@
-
-.App-header {
+.App {
   background-color: #432f58;
   min-height: 100vh;
-  width: 100vw;
+  padding: 10px 10px 20px 40px;
+  font-size: 24px;
+  color: white;
+}
+.App-header {
+  background-color: #432f58;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
