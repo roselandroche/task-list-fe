@@ -6,15 +6,22 @@ function TaskForm() {
         taskName: '',
         completed: false
     })
-    function handleChange() {
-
+    function handleChange(event) {
+        setForm({
+            ...form, 
+            [event.target.name]: event.target.value
+        });
+    }
+    function handleSubmit(event) {
+        event.preventDefault();
+        console.log(form);
     }
     return (
         <div>
             <h1>
                 Task Form
             </h1>
-            <form>
+            <form onSubmit={handleSubmit}>
                 <label>
                     Task
                 </label>
