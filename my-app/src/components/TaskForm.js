@@ -25,7 +25,7 @@ function TaskForm() {
                 <label>
                     Task
                 </label>
-                <input name='task' value={form.task} onChange={handleChange} />
+                <input name='taskName' value={form.task} onChange={handleChange} />
             </form>
         </div>
     )
