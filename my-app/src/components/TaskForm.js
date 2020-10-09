@@ -18,12 +18,9 @@ function TaskForm() {
     }
     return (
         <div>
-            <h1>
-                Task Form
-            </h1>
             <form onSubmit={handleSubmit}>
                 <label>
-                    Task
+                    Add a Task
                 </label>
                 <input name='taskName' value={form.task} onChange={handleChange} />
             </form>
