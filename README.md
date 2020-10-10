@@ -1,7 +1,7 @@
 # Project Title: Task List
 
 ## Description
-This will be the front end repository for a task list/to do list application. User will be able to add, update, and delete tasks.
+This will be the front end repository for a task list/to do list application. User will be able to add, update, and delete tasks. To be used for personal productivity, etc.
 
 ## Status
 Mid-build
