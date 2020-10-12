@@ -7,17 +7,25 @@ import TaskForm from './TaskForm';
 function App() {
   const [tasks, setTasks] = useState([]);
   useEffect(() => {
-    if (tasks === []) {
+    if (tasks.length === 0) {
       if (localStorage.getItem('tasks')) {
         setTasks(JSON.parse(localStorage.getItem('tasks')))
       }
+    } 
+    // else {
+      // if (localStorage.getItem('tasks')) {
+      //   localStorage.removeItem('tasks')
+      // }
+    //   localStorage.setItem('tasks', JSON.stringify(tasks));
+    // }
+  }, [])
+  useEffect(() => {
+    if(localStorage.getItem('tasks') && JSON.parse(localStorage.getItem('tasks').length !== tasks.length)) {
+      localStorage.setItem('tasks', JSON.stringify(tasks))
     } else {
-      if (localStorage.getItem('tasks')) {
-        localStorage.removeItem('tasks')
-      }
-      localStorage.setItem('tasks', JSON.stringify(tasks));
+      localStorage.setItem('tasks', JSON.stringify(tasks))
     }
-  }, [tasks])
+  }, [tasks.length])
   return (
     <div className="App">
       <header className="App-header">
