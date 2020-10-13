@@ -16,7 +16,6 @@ function TaskForm({ setTasks, tasks }) {
         event.preventDefault();
         setForm({...form, id: Date.now()})
         setTasks([...tasks, form])
-        // console.log(form);
     }
     return (
         <div>

@@ -11,13 +11,7 @@ function App() {
       if (localStorage.getItem('tasks')) {
         setTasks(JSON.parse(localStorage.getItem('tasks')))
       }
-    } 
-    // else {
-      // if (localStorage.getItem('tasks')) {
-      //   localStorage.removeItem('tasks')
-      // }
-    //   localStorage.setItem('tasks', JSON.stringify(tasks));
-    // }
+    }
   }, [])
   useEffect(() => {
     if(localStorage.getItem('tasks') && JSON.parse(localStorage.getItem('tasks').length !== tasks.length)) {
