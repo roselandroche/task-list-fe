@@ -3,7 +3,7 @@ import React from 'react'
 function Task({ task }) {
     return (
         <div>
-            <p>{task.taskName}</p>
+            <ul>{task.taskName}</ul>
         </div>
     )
 }
