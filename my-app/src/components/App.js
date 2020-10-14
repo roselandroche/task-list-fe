@@ -3,6 +3,7 @@ import '../css/App.css';
 
 import Header from './Header';
 import TaskForm from './TaskForm';
+import TaskList from './TaskList';
 
 function App() {
   const [tasks, setTasks] = useState([]);
@@ -25,7 +26,8 @@ function App() {
       <header className="App-header">
         <Header />
       </header>
-      <TaskForm setTasks={ setTasks } tasks = { tasks } />
+      <TaskForm setTasks={ setTasks } tasks ={ tasks } />
+      <TaskList tasks={ tasks }/>
     </div>
   );
 }
