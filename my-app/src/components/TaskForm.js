@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-function TaskForm({ setTasks, tasks }) {
+function TaskForm({ setTasks, tasks, history }) {
     const [form, setForm] = useState({
         id: Date.now(),
         taskName: '',
@@ -16,6 +16,10 @@ function TaskForm({ setTasks, tasks }) {
         event.preventDefault();
         setForm({...form, id: Date.now()})
         setTasks([...tasks, form])
+        history.push('/')
+    }
+    function handleCancel() {
+        history.push('/')
     }
     return (
         <div>
@@ -24,6 +28,12 @@ function TaskForm({ setTasks, tasks }) {
                     Add a Task
                 </label>
                 <input name='taskName' value={form.task} onChange={handleChange} />
+                <button type='submit'>
+                    Submit
+                </button>
+                <button onClick={ handleCancel }>
+                    Cancel
+                </button>
             </form>
         </div>
     )

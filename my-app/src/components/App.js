@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Route, Switch } from 'react-router-dom';
 import '../css/App.css';
 
 import Header from './Header';
@@ -26,8 +27,12 @@ function App() {
       <header className="App-header">
         <Header />
       </header>
-      <TaskForm setTasks={ setTasks } tasks ={ tasks } />
-      <TaskList tasks={ tasks }/>
+      <Switch>
+        <Route path='/addTask' render={ props => <TaskForm {...props} setTasks={ setTasks } tasks={ tasks } /> } />
+        <Route exact path='/' render={ props => <TaskList {...props} tasks={tasks} /> } />
+      </Switch>
+      {/* <TaskForm setTasks={ setTasks } tasks ={ tasks } />
+      <TaskList tasks={ tasks }/> */}
     </div>
   );
 }
