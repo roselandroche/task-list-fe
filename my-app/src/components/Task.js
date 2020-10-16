@@ -2,9 +2,7 @@ import React from 'react'
 
 function Task({ task }) {
     return (
-        <div>
-            <ul>{task.taskName}</ul>
-        </div>
+        <li>{task.taskName}</li>
     )
 }
 

@@ -29,10 +29,8 @@ function App() {
       </header>
       <Switch>
         <Route path='/addTask' render={ props => <TaskForm {...props} setTasks={ setTasks } tasks={ tasks } /> } />
-        <Route exact path='/' render={ props => <TaskList {...props} tasks={tasks} /> } />
+        <Route exact path='/' render={ props => <TaskList {...props} setTasks={ setTasks } tasks={tasks} /> } />
       </Switch>
-      {/* <TaskForm setTasks={ setTasks } tasks ={ tasks } />
-      <TaskList tasks={ tasks }/> */}
     </div>
   );
 }
