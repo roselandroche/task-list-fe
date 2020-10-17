@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Task from './Task';
 
-function TaskList({ tasks, toggle }) {
+function TaskList({ tasks, toggle, deleteCompleted }) {
     return (
         <div>
             <ul>
@@ -12,6 +12,9 @@ function TaskList({ tasks, toggle }) {
                 <Link to='/addTask' >
                     Add Task
                 </Link>
+            </button>
+            <button onClick={ deleteCompleted }>
+                Delete Task
             </button>
         </div>
     )

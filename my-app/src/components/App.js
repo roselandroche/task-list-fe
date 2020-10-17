@@ -35,6 +35,11 @@ function App() {
     setTasks(updatedTask);
   }
 
+  function deleteCompleted() {
+    const updatedTasks = tasks.filter(task => !task.completed);
+    setTasks(updatedTasks);
+  }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -42,7 +47,7 @@ function App() {
       </header>
       <Switch>
         <Route path='/addTask' render={ props => <TaskForm {...props} setTasks={ setTasks } tasks={ tasks } /> } />
-        <Route exact path='/' render={ props => <TaskList {...props} toggle={ toggleComplete } tasks={tasks} /> } />
+        <Route exact path='/' render={ props => <TaskList {...props} toggle={ toggleComplete } tasks={tasks} deleteCompleted={ deleteCompleted } /> } />
       </Switch>
     </div>
   );
