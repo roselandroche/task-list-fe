@@ -15,13 +15,26 @@ function App() {
       }
     }
   }, [])
+
   useEffect(() => {
     if(localStorage.getItem('tasks') && JSON.parse(localStorage.getItem('tasks').length !== tasks.length)) {
       localStorage.setItem('tasks', JSON.stringify(tasks))
     } else {
       localStorage.setItem('tasks', JSON.stringify(tasks))
     }
-  }, [tasks.length])
+  }, [tasks])
+
+  function toggleComplete(id) {
+    const updatedTask = tasks.map(task => {
+      if(task.id === id) {
+        return ({ ...task, completed: !task.completed })
+      } else {
+        return task
+      }
+    })
+    setTasks(updatedTask);
+  }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -29,7 +42,7 @@ function App() {
       </header>
       <Switch>
         <Route path='/addTask' render={ props => <TaskForm {...props} setTasks={ setTasks } tasks={ tasks } /> } />
-        <Route exact path='/' render={ props => <TaskList {...props} setTasks={ setTasks } tasks={tasks} /> } />
+        <Route exact path='/' render={ props => <TaskList {...props} toggle={ toggleComplete } tasks={tasks} /> } />
       </Switch>
     </div>
   );

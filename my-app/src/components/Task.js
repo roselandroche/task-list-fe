@@ -1,8 +1,11 @@
 import React from 'react'
 
-function Task({ task }) {
+function Task({ task, toggle }) {
+    
     return (
-        <li>{task.taskName}</li>
+        <li onClick={() => toggle(task.id)}>
+            {task.completed ? <del>{`${task.taskName}`}</del> : `${task.taskName}`}
+        </li>
     )
 }
 
