@@ -9,7 +9,7 @@ function TaskList({ tasks, toggle, deleteCompleted }) {
                 {tasks.map(task => <Task key={task.id} task={task} toggle={toggle} /> )}
             </ul>
             <button>
-                <Link to='/addTask' >
+                <Link to='/addtask' >
                     Add Task
                 </Link>
             </button>
