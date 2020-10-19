@@ -1,0 +1,14 @@
+.form {
+    width: 80vw;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    align-items: baseline;
+}
+
+input {
+    margin: 0 30px;
+    padding: 8px;
+    border-radius: 8px;
+    width: 300px;
+}

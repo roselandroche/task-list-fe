@@ -16,3 +16,16 @@
   font-size: 24px;
   color: white;
 }
+
+button {
+  padding: 8px;
+  margin: 0 10px;
+  width: 200px;
+  border-radius: 8px;
+  font-size: 20px;
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+}

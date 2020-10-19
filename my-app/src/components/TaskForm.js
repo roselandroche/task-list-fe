@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react';
+import '../css/TaskForm.css';
 
 function TaskForm({ setTasks, tasks, history, edit, match: {params: {id}} }) {
     const [form, setForm] = useState({
@@ -47,7 +48,7 @@ function TaskForm({ setTasks, tasks, history, edit, match: {params: {id}} }) {
     }
     return (
         <div>
-            <form onSubmit={handleSubmit}>
+            <form className='form' onSubmit={handleSubmit}>
                 <label>
                     Add a Task
                 </label>
