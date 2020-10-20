@@ -1,10 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Task from './Task';
+import '../css/TaskList.css';
 
 function TaskList({ tasks, toggle, deleteCompleted }) {
     return (
-        <div>
+        <div className='main_list'>
             <ul>
                 {tasks.map(task => <Task key={task.id} task={task} toggle={toggle} /> )}
             </ul>
