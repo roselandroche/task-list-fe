@@ -1,0 +1,13 @@
+.ind_task {
+    display: flex;
+    align-items: baseline;
+}
+
+li {
+    padding: 12px 50px;
+}
+
+.edit_btn {
+    width: 80px;
+    height: 42px;
+}
