@@ -1,10 +1,10 @@
 # Project Title: Task List
 
 ## Description
-This will be the front end repository for a task list/to do list application. User will be able to add, update, and delete tasks. To be used for personal productivity, etc.
+The front end repository for a task list/to do list application. User will be able to add, update, and delete tasks. Currently utilizing local storage as opposed to a database. To be used for personal productivity, etc.
 
 ## Status
-Mid-build
+Fully functional, not yet deployed.
 
 ## Tech Stack/Framework
 - React/JavaScript
@@ -12,8 +12,7 @@ Mid-build
 ## Bugs
 None yet
 
-## How to Use
-TBD
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
