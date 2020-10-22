@@ -1,9 +1,11 @@
 .form {
     width: 80vw;
     margin: 0 auto;
-    padding: 20px;
+    padding: 40px 30px;
     display: flex;
     align-items: baseline;
+    background-color: rgb(129, 107, 228);
+    border-radius: 12px;
 }
 
 input {
@@ -11,4 +13,5 @@ input {
     padding: 8px;
     border-radius: 8px;
     width: 300px;
+    font-size: 20px;
 }

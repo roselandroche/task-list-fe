@@ -3,4 +3,6 @@
     height: auto;
     margin: 0 auto;
     padding: 40px;
+    background-color: rgb(129, 107, 228);
+    border-radius: 12px;
 }
