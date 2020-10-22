@@ -4,7 +4,8 @@
     padding: 40px 30px;
     display: flex;
     align-items: baseline;
-    background-color: rgb(129, 107, 228);
+    background-color: rgb(167, 147, 255);
+    color: black;
     border-radius: 12px;
 }
 
