@@ -24,6 +24,13 @@ button {
   border-radius: 8px;
   font-size: 20px;
   background-color: white;
+  color: rgb(78, 21, 78);
+  border: 2px solid rgb(78, 21, 78);
+}
+
+button:hover{
+  background-color: rgb(255, 255, 144);
+  font-weight: bolder;
 }
 
 a {
