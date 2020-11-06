@@ -5,6 +5,7 @@ import '../css/App.css';
 import Header from './Header';
 import TaskForm from './TaskForm';
 import TaskList from './TaskList';
+import Quote from './Quote';
 
 function App() {
   const [tasks, setTasks] = useState([]);
@@ -50,6 +51,7 @@ function App() {
         <Route path='/addtask' render={ props => <TaskForm {...props} setTasks={ setTasks } tasks={ tasks } edit={ false } /> } />
         <Route exact path='/' render={ props => <TaskList {...props} toggle={ toggleComplete } tasks={tasks} deleteCompleted={ deleteCompleted } /> } />
       </Switch>
+      <Quote />
     </div>
   );
 }
