@@ -1,0 +1,24 @@
+.quote {
+    background-color: rgb(195, 182, 255);
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+    color: black;
+    letter-spacing: .2px;
+    font-size: 20px;
+}
+
+p {
+    padding: 4px;
+    margin: 0;
+}
+
+.second-line {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
